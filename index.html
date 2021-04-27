@@ -2,18 +2,73 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="calendar.css">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
 
+  <!-- the Below html was used as a template from https://www.w3schools.com/howto/howto_css_calendar.asp and changed to
+       use the actual dates and calendars -->
+  <div class="month">
+    <ul>
+      <li class="prev" id = "prev">&#10094;</li>
+      <li class="next" id= "next">&#10095;</li>
+      <li id = "monthText">Test<br></li>
+      <li id = "yearText">test</li>
+    </ul>
+  </div>
+
+  <ul class="weekdays">
+    <li>Sunday</li>
+    <li>Monday</li>
+    <li>Tuesday</li>
+    <li>Wednesday</li>
+    <li>Thursday</li>
+    <li>Friday</li>
+    <li>Saturday</li>
+  </ul>
+
+  <ul class="days" id="dayHolder">
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+    <div class="inactive"></div>
+  </ul>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
+  <script src="calendar.js"></script>
   </body>
 </html>
